@@ -142,7 +142,7 @@ def seoul_escape_info(cd):
     cafe = total[cd]
     tmp = []
     for theme in cafe:
-        tmp.append("{}\n {}".format(theme['title'],'\n'.join(theme['info'])))
+        tmp.append("{}\n{}".format(theme['title'],'\n'.join(theme['info'])))
     return(tmp)
 
 ###############################################################################
