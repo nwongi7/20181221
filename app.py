@@ -92,8 +92,9 @@ def master_key_list():
 ###############################################################################
 def get_total_info():
     url = 'http://www.seoul-escape.com/reservation/change_date/'
+    
     params = {
-        "current_date" : '2018/12/21'
+        "current_date" : time.strftime('%Y/%m/%d')
     }
 
     response = requests.get(url, params = params).text
